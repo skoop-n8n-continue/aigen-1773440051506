@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70">
+  <!-- Cannabis leaf icon -->
+  <g transform="translate(8, 8)">
+    <circle cx="27" cy="27" r="26" fill="#7dc244" opacity="0.15"/>
+    <circle cx="27" cy="27" r="26" fill="none" stroke="#7dc244" stroke-width="2"/>
+    <!-- Leaf shape -->
+    <path d="M27 42 C27 42 15 35 12 24 C9 13 18 8 27 14 C36 8 45 13 42 24 C39 35 27 42 27 42Z" fill="#7dc244"/>
+    <path d="M27 42 L27 16" stroke="#0a150a" stroke-width="1.5" fill="none"/>
+    <path d="M27 30 C22 26 16 25 13 20" stroke="#0a150a" stroke-width="1" fill="none"/>
+    <path d="M27 30 C32 26 38 25 41 20" stroke="#0a150a" stroke-width="1" fill="none"/>
+    <path d="M27 35 C23 32 18 32 15 28" stroke="#0a150a" stroke-width="1" fill="none"/>
+    <path d="M27 35 C31 32 36 32 39 28" stroke="#0a150a" stroke-width="1" fill="none"/>
+  </g>
+  <!-- QUALITY ROOTS text -->
+  <text x="68" y="28" font-family="'Bebas Neue', Arial Black, sans-serif" font-size="26" fill="#7dc244" letter-spacing="3" font-weight="400">QUALITY</text>
+  <text x="68" y="56" font-family="'Bebas Neue', Arial Black, sans-serif" font-size="26" fill="#ffffff" letter-spacing="4" font-weight="400">ROOTS</text>
+  <!-- Accent line -->
+  <line x1="68" y1="62" x2="232" y2="62" stroke="#7dc244" stroke-width="2" opacity="0.6"/>
+</svg>

@@ -1,0 +1,84 @@
+{
+  "template_id": "qr-deal-blast-v1",
+  "name": "Quality Roots — Deal Blast",
+  "created_at": "2026-03-13T00:00:00.000Z",
+  "version": "1.0.0",
+
+  "theme": {
+    "style": "athletic-dark-impact",
+    "description": "Cinematic dark forest-green split-screen layout with dramatic product reveal, animated price strikethrough, and explosive GSAP choreography. Each product gets solo spotlight treatment.",
+    "colors": ["#0d1a0d", "#7dc244", "#f5f5ee", "#f5c842", "#e84040"],
+    "mood": "bold, energetic, premium, athletic, cinematic",
+    "tags": ["dark", "green", "bold", "deals", "athletic", "cannabis", "dispensary", "split-screen", "impact"]
+  },
+
+  "capabilities": {
+    "products_per_cycle": 1,
+    "cycles_through_all_products": true,
+    "min_products": 1,
+    "max_products_tested": 10
+  },
+
+  "animation": {
+    "duration_per_product": 8,
+    "fps": 30,
+    "entrance_duration": 3.5,
+    "idle_duration": 3.2,
+    "exit_duration": 1.0,
+    "intro_duration": 1.2,
+    "uses_plugins": ["SplitText", "DrawSVGPlugin", "CustomEase", "MotionPathPlugin"],
+    "features": [
+      "Animated price strikethrough (DrawSVG)",
+      "Explosive NOW price entrance (custom ease)",
+      "SplitText character cascade on product name",
+      "Atmospheric background particle system (Canvas)",
+      "Burst particle effect on product/deal reveal",
+      "Glow ring with radial gradient + CSS halo",
+      "Scrolling ticker bar",
+      "Scan line effect",
+      "Impact flash on key moments",
+      "Angled panel divider blade",
+      "Rotating watermark background",
+      "Savings percentage badge with angular clip-path"
+    ]
+  },
+
+  "assets": {
+    "background": "css-gradient-generated",
+    "overlays": [],
+    "icons": ["assets/qr-logo.svg"],
+    "fonts": ["Bebas Neue", "Oswald", "Inter"]
+  },
+
+  "product_fields_used": [
+    "name",
+    "online_title",
+    "brand",
+    "category",
+    "price",
+    "discounted_price",
+    "image_url",
+    "strain_type",
+    "strain",
+    "lab_thc_value",
+    "lab_thc_unit",
+    "lab_thca_value",
+    "lab_thca_unit"
+  ],
+
+  "technical": {
+    "resolution": "1920x1080",
+    "performance": "optimized",
+    "browser_compatibility": "chrome_latest",
+    "canvas_elements": ["bg-canvas (atmospheric)", "particle-canvas (burst effects)"],
+    "requires_network": true,
+    "cdn_dependencies": [
+      "https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js",
+      "https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js",
+      "https://cdn.jsdelivr.net/npm/gsap@3/dist/CustomEase.min.js",
+      "https://cdn.jsdelivr.net/npm/gsap@3/dist/DrawSVGPlugin.min.js",
+      "https://cdn.jsdelivr.net/npm/gsap@3/dist/MotionPathPlugin.min.js",
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700"
+    ]
+  }
+}

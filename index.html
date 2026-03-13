@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Roots — Deal Blast</title>
+
+  <!-- GSAP Core + Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/DrawSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/MotionPathPlugin.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=q7m2x9">
+</head>
+<body>
+  <div id="scene">
+
+    <!-- ── LAYER 0: Deep Background ── -->
+    <div id="background">
+      <canvas id="bg-canvas"></canvas>
+      <div id="bg-diagonals">
+        <div class="diag-stripe s1"></div>
+        <div class="diag-stripe s2"></div>
+        <div class="diag-stripe s3"></div>
+        <div class="diag-stripe s4"></div>
+      </div>
+      <div id="bg-watermark-wrap">
+        <!-- JS fills this -->
+      </div>
+    </div>
+
+    <!-- ── LAYER 1: Mid Background Geometry ── -->
+    <div id="bg-geo">
+      <div class="geo-diamond gd1"></div>
+      <div class="geo-diamond gd2"></div>
+      <svg id="bg-chevrons" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <polyline class="bg-chev" points="200,0 360,540 200,1080" fill="none" stroke="rgba(125,194,68,0.04)" stroke-width="3"/>
+        <polyline class="bg-chev" points="280,0 440,540 280,1080" fill="none" stroke="rgba(125,194,68,0.04)" stroke-width="2"/>
+        <polyline class="bg-chev" points="1560,0 1720,540 1560,1080" fill="none" stroke="rgba(125,194,68,0.03)" stroke-width="3"/>
+        <polyline class="bg-chev" points="1640,0 1800,540 1640,1080" fill="none" stroke="rgba(125,194,68,0.03)" stroke-width="2"/>
+        <!-- Horizontal accent lines -->
+        <line x1="900" y1="0" x2="900" y2="1080" stroke="rgba(125,194,68,0.035)" stroke-width="1.5"/>
+        <line x1="880" y1="0" x2="880" y2="1080" stroke="rgba(125,194,68,0.02)" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <!-- ── LAYER 2: Particle Canvas ── -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ── LAYER 3: Product Slides (1 at a time) ── -->
+    <div id="products-container">
+      <!-- dynamically populated -->
+    </div>
+
+    <!-- ── LAYER 4: Foreground Depth Elements ── -->
+    <div id="foreground-layer">
+      <!-- Bottom-left angular bar -->
+      <div class="fg-bar fb-bottom-left"></div>
+      <!-- Top-right corner accent -->
+      <div class="fg-corner-accent"></div>
+      <!-- Large angled green blade (bottom) -->
+      <div class="fg-blade"></div>
+    </div>
+
+    <!-- ── LAYER 5: UI / Branding ── -->
+    <div id="ui-layer">
+      <!-- Quality Roots badge top-left -->
+      <div id="brand-badge">
+        <img src="assets/qr-logo.svg" alt="Quality Roots" id="logo-img">
+      </div>
+
+      <!-- Deal label top-right -->
+      <div id="deal-label">
+        <span class="deal-label-text">DEAL OF THE DAY</span>
+      </div>
+
+      <!-- Bottom ticker bar -->
+      <div id="ticker-bar">
+        <div id="ticker-track">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <!-- Flash overlay for impact moments -->
+      <div id="flash-overlay"></div>
+    </div>
+
+  </div>
+
+  <script src="animation.js?v=q7m2x9"></script>
+</body>
+</html>
